@@ -1,0 +1,5 @@
+ErrorDocument 401 http://www.blackbacklight.com/error/redirect.html
+ErrorDocument 404 http://www.blackbacklight.com/error/redirect.html
+
+
+AddHandler server-parsed .html

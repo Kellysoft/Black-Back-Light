@@ -1,0 +1,443 @@
+
+@-webkit-keyframes strobe {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #fff; }
+  }
+  @-moz-keyframes strobe {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #fff; }
+  }
+  @keyframes strobe {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #fff; }
+  }
+
+body{
+  margin: 0px auto;
+  background-color: black;
+  height: 100%;
+  padding: 0px;
+}
+
+body.strobe{
+  -webkit-animation: strobe .3s infinite;
+  -moz-animation:    strobe .3s infinite;
+  animation:         strobe .1s infinite;
+}
+
+.contentContainer{
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.opacityBar{
+  margin: 0px auto;
+  background-color: transparent;
+  width: 100%;
+  height:80px;
+  cursor: pointer;
+  text-align: center;
+  /*outline: 1px dotted lime;*/
+}
+
+.allBlackText{
+  width: 75%;
+  font-size: 80px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(29, 29, 29);
+  opacity: 1;
+  text-align: center;
+  outline: 1px dotted lime;
+}
+
+.allBlackText.is-showing{
+  transition: all 0.9s ease-in-out;
+  opacity: 1;
+}
+
+.allBlackText.is-showing.not-showing{
+  transition: all 0.9s ease-in-out;
+  opacity: 0;
+}
+
+.directionsText{
+  color: white;
+}
+
+.directionsContent{
+  position: relative;
+  bottom: 120px;
+}
+
+.directionsContainer{
+  position: relative;
+  bottom: 290px;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 350px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: all 0.9s ease-in-out;
+  text-align: center;
+  margin: 0px auto;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+
+.blackLightLogo{
+  width: 100%;
+  height:300px;
+  margin: 0px auto;
+  background-image: url(../image/blackbacklight_logo_shiningRS.png);
+  background-repeat: no-repeat;
+  background-size: auto 95%;
+  background-position: top center;
+  transition: all 0.8s ease-in-out;
+}
+
+.blackLightLogo.darkened{
+  background-image: url(../image/blackbacklight_logo_darkgray.png);
+  background-repeat: no-repeat;
+  background-size: auto 65%;
+  background-position: top center;
+  transition: all 0.8s ease-in-out;
+}
+
+.blackLightLogo.not-showing{
+  opacity: 0;
+}
+
+.darkContolbar{
+  background-color: rgb(29, 29, 29);
+  width: 200px;
+  height: 20px;
+  margin: 0px auto;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all .9s ease-in-out;
+  position: relative;
+  bottom: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.darkContolbar2{
+  /*background-color: rgb(29, 29, 29);*/
+  color: rgb(29, 29, 29);
+  /*background-color: transparent;*/
+  width: 200px;
+  height: 20px;
+  margin: 0px auto;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all .9s ease-in-out;
+  position: relative;
+  bottom: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.directionsButton{
+  transition: all .9s ease-in-out;
+  width: 250px;
+  border: 3px solid white;
+  border-radius: 15px;
+  color: white;
+  margin: 0px auto;
+  cursor: pointer;
+}
+
+.darkContolbar2.is-showing:hover{
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+
+.directionsButton.not-showing{
+  transition: all .9s ease-in-out;
+  opacity: 0;
+}
+
+.darkControlText{
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.darkControlText2{
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.smitty{
+  position: relative;
+  bottom: 120px;
+  width: 50%;
+  height:300px;
+  margin: 0px auto;
+  background-image: url(../image/f1RS.png);
+  background-repeat: no-repeat;
+  background-size: auto 95%;
+  background-position: center center;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+/*.smitty:hover{
+  -webkit-animation: none;
+  animation:none;
+}*/
+
+.smitty.darkened{
+  background-image: url(../image/f2RS.png);
+}
+
+.smitty.not-showing{
+  transition: all .9s ease-in-out;
+  opacity: 0;
+}
+
+.directionsButton:hover{
+  border: 3px solid lime;
+  color: lime;
+}
+
+.directionsTitle{
+  font-size: 40px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.directionsText{
+  color: white;
+  opacity: 0;
+}
+
+.directionsText.darkened{
+  color: black;
+}
+
+
+#titlePC:hover + #textPC{
+  transition: all .5s ease-in-out;
+  opacity: 1;
+}
+
+#titleMAC:hover + #textMAC{
+  transition: all .5s ease-in-out;
+  opacity: 1;
+}
+
+#titlePC{
+  cursor: crosshair;
+  transition: all .9s ease-in-out;
+  position:relative;
+  right: 0px;
+  opacity: 1;
+}
+
+
+#titleMAC{
+  cursor: crosshair;
+  transition: all .9s ease-in-out;
+  position:relative;
+  left: 0px;
+  opacity: 1;
+}
+
+#titlePC.darkened{
+  transition: all .9s ease-in-out;
+  position:relative;
+  right: 300px;
+  opacity: 0;
+}
+
+
+#titleMAC.darkened{
+  transition: all .9s ease-in-out;
+  position:relative;
+  left: 300px;
+  opacity: 0;
+}
+
+#titlePC.not-showing{
+  transition: all .9s ease-in-out;
+  opacity: 0;
+}
+
+#titleMAC.not-showing{
+  transition: all .9s ease-in-out;
+  opacity: 0;
+}
+
+.specificDirections{
+  position: relative;
+  bottom: 37px;
+  margin: 0px 200px;
+  width: 15%;
+  height: 170px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.directionsContainer.not-showing{
+  transition: all .9s ease-in-out;
+  opacity: 0;
+}
+
+.darkContolbar.is-showing{
+  transition: all .9s ease-in-out;
+  opacity: 1;
+  bottom: 150px;
+}
+
+.darkContolbar2.is-showing{
+  transition: all .9s ease-in-out;
+  opacity: 1;
+  bottom: 150px;
+}
+
+.darkContolbar.is-showing.not-showing{
+  transition: all .9s ease-in-out;
+  opacity: 0;
+}
+
+.darkContolbar2.is-showing.not-showing{
+  transition: all .9s ease-in-out;
+  opacity: 0;
+}
+
+.colorChangerBar{
+  position: relative;
+  bottom: 250px;
+  margin: 0px auto;
+  font-size: 10px;
+}
+
+.colorButton{
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 15px 3px 15px;
+}
+
+.colorButton:hover{
+  transition: all .3s ease-in-out;
+  border: 2px solid white;
+  /*transform: scale(1.2);*/
+}
+
+.colorChangerBar.phantom{
+  transition: all .9s ease-in-out;
+  opacity: .5;
+}
+
+.colorChangerBar.not-showing{
+  transition: all .9s ease-in-out;
+  opacity: 0;
+}
+
+#blackColor{
+  background-color: rgb(29, 29, 29);
+}
+
+#blueColor{
+  background-color: blue;
+}
+
+#redColor{
+  background-color: red;
+}
+
+#orangeColor{
+  background-color: orange;
+}
+
+#yellowColor{
+  background-color: yellow;
+}
+
+#greenColor{
+  background-color: forestgreen;
+}
+
+#strobeColor{
+  background-color: white;
+}
+
+#strobeColor:hover + #strobeInstructions{
+  opacity: 1;
+}
+
+#strobeInstructions{
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  bottom: 250px;
+  margin: 0px auto;
+  text-align: center;
+  opacity: 1;
+  transition: all .9s ease-in-out;
+}
+
+#strobeInstructions.darkened{
+  color: rgb(29, 29, 29);
+}
+
+#strobeInstructions.darkened{
+  color: rgb(29, 29, 29);
+}
+
+#strobeInstructions.not-showing{
+  opacity: 0;
+}
+
+
+/*///////////////////////////////////
+redirect page css
+///////////////////////////////////*/
+.redirectInfo{
+  margin-left: 40%;
+  color: white;
+}
+
+.redirectButton{
+  margin-left: 45%;
+  width: 166px;
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 15px;
+  color: white;
+
+  cursor: pointer;
+
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+/*///////////////////////////////
+the strobe page
+///////////////////////////////*/
