@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
- 
+
   <head>
-  <!-- This is our meta data, descrption, keywords ect. --> 
+  <!-- This is our meta data, descrption, keywords ect. -->
   <meta name="description" content="BlackBackLight.com is a very simple but feature driven website built for the rare occasions when you need a fully blank screen color. Perfect for running processes in a dark room, when you need to leave the screen on.">
   <meta name="keywords" content="black background, background colors, f11, solid colors, blank backgound, backlight, backlit, nightshade, darkness, blacklight, black ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,25 +55,33 @@
   <!-- -->
   </head>
   <body>
-<!-- Our Server code for Facebook share. --> 
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=242014042961251";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!--  -->
-     <div class="opacityBar"></div>
+    <!-- Our Server code for Facebook share. -->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=242014042961251";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--  -->
+    <div class="opacityBar">
+      <div class="allBlackButtonPulse">
+      </div>
+    </div>
     <div class="blackLightLogo"></div>
-    <div class="darkContolbar">
-      <p class="darkControlText">CLICK HERE</p>
+     <div class="smitty"></div>
+    <div class="darkBarControls">
+      <div class="darkContolbar">
+        <p class="darkControlText">TURN ON THE LIGHTS</p>
+      </div>
+      <div class="darkContolbar2">
+        <p class="darkControlText2">GO FULL DARK MODE</p>
+      </div>
     </div>
-    <div class="darkContolbar2">
-      <p class="darkControlText2">GO FULL DARK MODE</p>
-    </div>
-    <div class="smitty"></div>
+    <!-- <div class="smitty"></div> -->
     <div class="contentContainer">
       <div class="directionsContent">
         <div class="specificDirections">
@@ -86,10 +94,8 @@
         </div>
         <div class="directionsContainer">
           <div class="directionsButton">
-            <p>Click Here to Make this Disappear</p>
-           <!--  The Facebook share button. -->
+            <p>Press Here to Make this Disappear</p>
             <div class="fb-share-button" data-href="http://blackbacklight.com" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fblackbacklight.com%2F&amp;src=sdkpreparse">Share</a></div>
-            <!--  -->
           </div>
         </div>
         <div class="colorChangerBar">
@@ -98,18 +104,18 @@
           <div class="colorButton" id="redColor"></div>
           <div class="colorButton" id="orangeColor"></div>
           <div class="colorButton" id="yellowColor"></div>
+          <div class="colorButton" id="greenColor"></div>
           <div class="colorButton" id="strobeColor"></div>
         </div>
         <div id="strobeInstructions">
           <h1>WARNING!!!!!</h1>
           <p class="strobeInfo">Press the white dot to toggle the strobe effect</p>
         </div>
-        </div>
+      </div>
     </div>
-   <!--  Jquery and Javascript scripts. --> 
+    <!-- <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type ="text/javascript" src="js/pageController.js"></script>
-    <!--  -->
   </body>
 </html>
