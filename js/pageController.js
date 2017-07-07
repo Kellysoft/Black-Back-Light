@@ -1,6 +1,7 @@
 // fadeClick---function
 $('.directionsButton').click(function(){
   $('.directionsContainer').addClass('not-showing');
+  $('.allBlackButtonPulse').addClass('is-showing');
   $('.darkContolbar').addClass('is-showing');
   $('.darkContolbar2').addClass('is-showing');
   $('.blackLightLogo').addClass('darkened');
@@ -14,6 +15,7 @@ $('.directionsButton').click(function(){
 // unFadeClick---function
 $('.darkContolbar').click(function(){
   $(this).removeClass('is-showing');
+  $('.allBlackButtonPulse').removeClass('is-showing');
   $('.darkContolbar2').removeClass('is-showing');
   $('.blackLightLogo').removeClass('darkened');
   $('.directionsContainer').removeClass('not-showing');
@@ -29,6 +31,7 @@ $('.darkContolbar').click(function(){
 // allBlack---function 1
 $('.darkContolbar2').click(function(){
   $(this).removeClass('is-showing');
+  $('.allBlackButtonPulse').addClass('not-showing');
   $('.blackLightLogo').toggleClass('not-showing');
   $('.darkContolbar').toggleClass('not-showing');
   $('.colorChangerBar').toggleClass('not-showing');
@@ -84,5 +87,6 @@ $('#strobeColor').click(function(){
 })
 
 // Wiggle---function
-  $('.smitty').click(function(){
+  $('.smitty.darkened').click(function(){
+
 })
